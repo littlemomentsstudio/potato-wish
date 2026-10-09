@@ -4,231 +4,512 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Potato Wish | Little Gifts, Big Smiles</title>
+    <meta
+        name="description"
+        content="Potato Wish offers fresh potatoes at affordable prices. Explore our products and contact us for orders."
+    >
 
-    <meta name="description" content="Discover cute potato-themed gifts for your favourite people. Little gifts, big smiles!">
+    <meta name="theme-color" content="#263b2c">
+
+    <title>Potato Wish | Fresh Potatoes, Fair Prices</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <a href="#home" class="logo">
-            <span class="logo-icon">🥔</span>
-            <span>
-                <strong>Potato Wish 💗</strong>
-                <small>Small Gifts, Big Smiles</small>
-            </span>
-        </a>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
 
-        <button class="menu-toggle" id="menu-toggle"
-            aria-label="Toggle navigation" aria-expanded="false">
-            ☰
-        </button>
+            <a class="brand" href="#home" aria-label="Potato Wish home">
+                <span class="brand-name">POTATO WISH</span>
+                <span class="brand-tagline" data-i18n="brandTagline">
+                    Freshness You Can Trust
+                </span>
+            </a>
 
-        <nav class="nav-links" id="nav-links">
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
+                Menu
+            </button>
+
+            <nav class="main-nav" id="nav-links" aria-label="Main navigation">
+                <a href="#home" data-i18n="navHome">Home</a>
+                <a href="#products" data-i18n="navProducts">Products</a>
+                <a href="#about" data-i18n="navAbout">About Us</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </nav>
+
+            <div class="language-control">
+                <label for="language-select" data-i18n="languageLabel">
+                    Language
+                </label>
+
+                <select id="language-select" aria-label="Choose language">
+                    <option value="en">English</option>
+                    <option value="ur">اردو</option>
+                </select>
+            </div>
+
+        </div>
     </header>
+
 
     <main>
 
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-content">
-                <span class="eyebrow">♡ Cute Gifts for Every Occasion ♡</span>
+            <div class="container hero-container">
 
-                <h1>Little Potatoes,<br>
-                    <span>Big Happiness!</span>
-                </h1>
+                <div class="hero-content">
 
-                <p>
-                    Tiny gifts, endless smiles! Make your favourite
-                    moments extra special with a little potato love.
-                </p>
+                    <p class="eyebrow" data-i18n="heroEyebrow">
+                        FRESH FROM THE FARM
+                    </p>
 
-                <p class="urdu" lang="ur" dir="rtl">
-                    چھوٹے تحفے، بڑی خوشیاں! 💗
-                </p>
+                    <h1 data-i18n="heroTitle">
+                        Fresh Potatoes for Every Kitchen
+                    </h1>
 
-                <a href="#products" class="btn btn-primary">
-                    Explore Gifts <span>→</span>
-                </a>
-            </div>
+                    <p class="hero-description" data-i18n="heroDescription">
+                        Quality potatoes at fair prices for homes, shops
+                        and food businesses.
+                    </p>
 
-            <div class="hero-art" aria-label="Cute potato gift illustration">
-                <div class="sparkle sparkle-one">✦</div>
-                <div class="sparkle sparkle-two">♡</div>
-                <div class="potato-character">
-                    <span class="potato-blush blush-left"></span>
-                    <span class="potato-blush blush-right"></span>
-                    <span class="potato-eye eye-left"></span>
-                    <span class="potato-eye eye-right"></span>
-                    <span class="potato-smile">⌣</span>
-                    <span class="potato-heart">♥</span>
+                    <div class="hero-actions">
+                        <a
+                            href="#products"
+                            class="button button-primary"
+                            data-i18n="exploreProducts"
+                        >
+                            Explore Products
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="button button-secondary"
+                            data-i18n="contactUs"
+                        >
+                            Contact Us
+                        </a>
+                    </div>
+
                 </div>
-                <div class="art-caption">A little love, just for you!</div>
-            </div>
-        </section>
 
-        <!-- Products Section -->
-        <section class="products section" id="products">
-            <div class="section-heading">
-                <span class="eyebrow">Made with love ♡</span>
-                <h2>Our Little Gifts</h2>
-                <p>Thoughtful surprises for your favourite people.</p>
-                <p class="urdu" lang="ur" dir="rtl">
-                    آپ کے پیاروں کے لیے خاص تحفے!
-                </p>
-            </div>
-
-            <div class="product-grid">
-
-                <article class="product-card">
-                    <div class="product-image product-one">
-                        <span class="product-emoji">🧸</span>
-                        <span class="image-label">Cuddle time!</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-tag">SOFT & CUTE</span>
-                        <h3>Potato Plush</h3>
-                        <p>A cuddly little friend to brighten someone's day.</p>
-                        <div class="product-bottom">
-                            <span class="price">From Rs. 200</span>
-                            <a href="#contact" class="add-btn" aria-label="Ask about Potato Plush">↗</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image product-two">
-                        <span class="product-emoji">🧸</span>
-                        <span class="image-label">Take me along!</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-tag">LITTLE FAVOURITE</span>
-                        <h3>Potato Keychain</h3>
-                        <p>A tiny potato buddy for your everyday adventures.</p>
-                        <div class="product-bottom">
-                            <span class="price">From Rs. 250</span>
-                            <a href="#contact" class="add-btn" aria-label="Ask about Potato Keychain">↗</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image product-three">
-                        <span class="product-emoji">🎁</span>
-                        <span class="image-label">Surprise inside!</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-tag">GIFT WITH LOVE</span>
-                        <h3>Potato Gift Box</h3>
-                        <p>A sweet little surprise for someone special.</p>
-                        <div class="product-bottom">
-                            <span class="price">From Rs. 300</span>
-                            <a href="#contact" class="add-btn" aria-label="Ask about Potato Gift Box">↗</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="product-card">
-                    <div class="product-image product-four">
-                        <span class="product-emoji">☕</span>
-                        <span class="image-label">Sip & smile!</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-tag">DAILY HAPPINESS</span>
-                        <h3>Potato Mug</h3>
-                        <p>A little happiness to brighten your coffee breaks.</p>
-                        <div class="product-bottom">
-                            <span class="price">From Rs. 350</span>
-                            <a href="#contact" class="add-btn" aria-label="Ask about Potato Mug">↗</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-
-            <p class="demo-note">
-                ✨ Demo prices and product illustrations — final details coming soon.
-            </p>
-        </section>
-
-        <!-- About Section -->
-        <section class="about section" id="about">
-            <div class="about-art">
-                <span class="about-heart">♡</span>
-                <div class="about-potato">🥔</div>
-                <span class="about-note">Made with<br>love ♡</span>
-            </div>
-
-            <div class="about-content">
-                <span class="eyebrow">A little story about us</span>
-                <h2>Small Gifts,<br>Big Feelings.</h2>
-
-                <p>
-                    At Potato Wish, we believe the smallest gifts can
-                    create the biggest smiles. Our cute gift ideas are
-                    made to celebrate friendship, love and all those
-                    little moments worth remembering.
-                </p>
-
-                <p class="urdu" lang="ur" dir="rtl">
-                    چھوٹے تحفے بھی بڑی خوشیاں دے سکتے ہیں۔
-                    اپنے پیاروں کے خاص لمحات کو مزید خوبصورت بنائیں۔
-                </p>
-
-                <div class="about-features">
-                    <span>♡ Cute & thoughtful</span>
-                    <span>✦ Made for special moments</span>
-                    <span>🎁 Gifts full of happiness</span>
+                <!-- Product visual placeholder: image can be added later -->
+                <div
+                    class="hero-visual image-placeholder"
+                    role="img"
+                    aria-label="Potato product image to be added"
+                    data-i18n-aria="heroImageLabel"
+                >
+                    <span data-i18n="imageComingSoon">
+                        Product image coming soon
+                    </span>
                 </div>
+
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-            <div class="contact-text">
-                <span class="eyebrow">Let's spread some happiness ♡</span>
-                <h2>Have a little question?</h2>
-                <p>We'd love to hear from you. Let's find your perfect gift!</p>
-                <p class="urdu" lang="ur" dir="rtl">
-                    اپنے پسندیدہ تحفے کے لیے ہم سے رابطہ کریں!
-                </p>
+
+        <!-- Business Benefits -->
+        <section class="benefits-section">
+            <div class="container benefits-grid">
+
+                <article class="benefit-item">
+                    <h2 data-i18n="benefitQualityTitle">Quality First</h2>
+                    <p data-i18n="benefitQualityText">
+                        Potatoes selected with care.
+                    </p>
+                </article>
+
+                <article class="benefit-item">
+                    <h2 data-i18n="benefitPriceTitle">Fair Prices</h2>
+                    <p data-i18n="benefitPriceText">
+                        Options for different budgets.
+                    </p>
+                </article>
+
+                <article class="benefit-item">
+                    <h2 data-i18n="benefitServiceTitle">Customer Focus</h2>
+                    <p data-i18n="benefitServiceText">
+                        Helpful service for every order.
+                    </p>
+                </article>
+
             </div>
+        </section>
 
-            <div class="contact-buttons">
-                <!-- Replace # with the client's actual WhatsApp link -->
-                <a href="#" class="btn btn-whatsapp" id="whatsapp-link">
-                    WhatsApp Us ↗
-                </a>
 
-                <!-- Replace # with the client's actual Instagram profile -->
-                <a href="#" class="btn btn-instagram" id="instagram-link">
-                    Instagram ↗
-                </a>
+        <!-- Products -->
+        <section class="products-section section" id="products">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="productsEyebrow">
+                        OUR PRODUCTS
+                    </p>
+
+                    <h2 data-i18n="productsTitle">
+                        Choose Your Potatoes
+                    </h2>
+
+                    <p data-i18n="productsDescription">
+                        Explore our available options and choose what
+                        suits your needs.
+                    </p>
+                </div>
+
+
+                <div class="product-grid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card" data-product-id="1">
+
+                        <div
+                            class="product-image image-placeholder"
+                            role="img"
+                            aria-label="Regular potatoes image to be added"
+                            data-i18n-aria="regularImageLabel"
+                        >
+                            <span data-i18n="imageComingSoon">
+                                Product image coming soon
+                            </span>
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category" data-i18n="productCategory">
+                                FRESH POTATOES
+                            </p>
+
+                            <h3 data-i18n="productRegular">
+                                Regular Potatoes
+                            </h3>
+
+                            <p class="product-description" data-i18n="regularDescription">
+                                An everyday choice for home cooking.
+                            </p>
+
+                            <div class="product-bottom">
+                                <p class="product-price">
+                                    <span data-i18n="priceLabel">Price</span>
+                                    <strong>Rs. 100</strong>
+                                </p>
+
+                                <button
+                                    class="button button-product order-button"
+                                    type="button"
+                                    data-product-name="Regular Potatoes"
+                                    data-product-price="100"
+                                    data-i18n="orderNow"
+                                >
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 2 -->
+                    <article class="product-card" data-product-id="2">
+
+                        <div
+                            class="product-image image-placeholder"
+                            role="img"
+                            aria-label="Premium potatoes image to be added"
+                            data-i18n-aria="premiumImageLabel"
+                        >
+                            <span data-i18n="imageComingSoon">
+                                Product image coming soon
+                            </span>
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category" data-i18n="productCategory">
+                                FRESH POTATOES
+                            </p>
+
+                            <h3 data-i18n="productPremium">
+                                Premium Potatoes
+                            </h3>
+
+                            <p class="product-description" data-i18n="premiumDescription">
+                                A carefully selected option for your kitchen.
+                            </p>
+
+                            <div class="product-bottom">
+                                <p class="product-price">
+                                    <span data-i18n="priceLabel">Price</span>
+                                    <strong>Rs. 200</strong>
+                                </p>
+
+                                <button
+                                    class="button button-product order-button"
+                                    type="button"
+                                    data-product-name="Premium Potatoes"
+                                    data-product-price="200"
+                                    data-i18n="orderNow"
+                                >
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 3 -->
+                    <article class="product-card" data-product-id="3">
+
+                        <div
+                            class="product-image image-placeholder"
+                            role="img"
+                            aria-label="Large potatoes image to be added"
+                            data-i18n-aria="largeImageLabel"
+                        >
+                            <span data-i18n="imageComingSoon">
+                                Product image coming soon
+                            </span>
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category" data-i18n="productCategory">
+                                FRESH POTATOES
+                            </p>
+
+                            <h3 data-i18n="productLarge">
+                                Large Potatoes
+                            </h3>
+
+                            <p class="product-description" data-i18n="largeDescription">
+                                A practical option for larger meals.
+                            </p>
+
+                            <div class="product-bottom">
+                                <p class="product-price">
+                                    <span data-i18n="priceLabel">Price</span>
+                                    <strong>Rs. 300</strong>
+                                </p>
+
+                                <button
+                                    class="button button-product order-button"
+                                    type="button"
+                                    data-product-name="Large Potatoes"
+                                    data-product-price="300"
+                                    data-i18n="orderNow"
+                                >
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 4 -->
+                    <article class="product-card" data-product-id="4">
+
+                        <div
+                            class="product-image image-placeholder"
+                            role="img"
+                            aria-label="Bulk potatoes image to be added"
+                            data-i18n-aria="bulkImageLabel"
+                        >
+                            <span data-i18n="imageComingSoon">
+                                Product image coming soon
+                            </span>
+                        </div>
+
+                        <div class="product-info">
+                            <p class="product-category" data-i18n="productCategory">
+                                BULK OPTION
+                            </p>
+
+                            <h3 data-i18n="productBulk">
+                                Bulk Potatoes
+                            </h3>
+
+                            <p class="product-description" data-i18n="bulkDescription">
+                                An option for shops and food businesses.
+                            </p>
+
+                            <div class="product-bottom">
+                                <p class="product-price">
+                                    <span data-i18n="priceLabel">Price</span>
+                                    <strong>Rs. 400</strong>
+                                </p>
+
+                                <button
+                                    class="button button-product order-button"
+                                    type="button"
+                                    data-product-name="Bulk Potatoes"
+                                    data-product-price="400"
+                                    data-i18n="orderNow"
+                                >
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="pricing-note" data-i18n="pricingNote">
+                    Listed prices are temporary examples and can be updated
+                    when final prices and selling units are confirmed.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- About Us -->
+        <section class="about-section section" id="about">
+            <div class="container about-container">
+
+                <div class="about-visual image-placeholder"
+                    role="img"
+                    aria-label="Potato business image to be added"
+                    data-i18n-aria="aboutImageLabel"
+                >
+                    <span data-i18n="imageComingSoon">
+                        Product image coming soon
+                    </span>
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow" data-i18n="aboutEyebrow">
+                        ABOUT POTATO WISH
+                    </p>
+
+                    <h2 data-i18n="aboutTitle">
+                        Simple Shopping. Honest Service.
+                    </h2>
+
+                    <p data-i18n="aboutDescription">
+                        Potato Wish is focused on making potato shopping
+                        straightforward, with clear product options,
+                        transparent pricing and helpful customer service.
+                    </p>
+
+                    <ul class="about-list">
+                        <li data-i18n="aboutPointOne">
+                            Clear product and price information
+                        </li>
+                        <li data-i18n="aboutPointTwo">
+                            Options for household and business needs
+                        </li>
+                        <li data-i18n="aboutPointThree">
+                            Direct contact for order enquiries
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-section section" id="contact">
+            <div class="container contact-container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="contactEyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2 data-i18n="contactTitle">
+                        Ready to Place an Order?
+                    </h2>
+
+                    <p data-i18n="contactDescription">
+                        Contact us to confirm availability, quantity,
+                        prices and delivery details.
+                    </p>
+                </div>
+
+                <div class="contact-details">
+                    <p>
+                        <span data-i18n="contactBusinessLabel">
+                            Business
+                        </span>
+                        <strong>Potato Wish</strong>
+                    </p>
+
+                    <p>
+                        <span data-i18n="contactAvailabilityLabel">
+                            Product availability
+                        </span>
+                        <strong data-i18n="contactAvailabilityValue">
+                            Confirm before ordering
+                        </strong>
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+
+                    <!-- Add the real WhatsApp URL later -->
+                    <a
+                        class="button button-primary"
+                        id="whatsapp-link"
+                        href="#"
+                        data-i18n="whatsappContact"
+                    >
+                        WhatsApp
+                    </a>
+
+                    <!-- Add the real Instagram URL later -->
+                    <a
+                        class="button button-secondary"
+                        id="instagram-link"
+                        href="#"
+                        data-i18n="instagramContact"
+                    >
+                        Instagram
+                    </a>
+
+                </div>
+
+                <p class="contact-note" data-i18n="contactNote">
+                    Contact links will be activated when the business
+                    owner provides the correct details.
+                </p>
+
             </div>
         </section>
 
     </main>
 
+
     <!-- Footer -->
-    <footer class="footer">
-        <a href="#home" class="footer-logo">🥔 Potato Wish 💗</a>
-        <p>Made with a little love and lots of smiles.</p>
-        <p class="copyright">© <span id="year"></span> Potato Wish. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-container">
+
+            <a class="footer-brand" href="#home">POTATO WISH</a>
+
+            <p data-i18n="footerDescription">
+                Fresh potatoes. Fair prices. Reliable service.
+            </p>
+
+            <p class="copyright">
+                &copy; <span id="year"></span> Potato Wish.
+                <span data-i18n="rightsReserved">All rights reserved.</span>
+            </p>
+
+        </div>
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 </html>
